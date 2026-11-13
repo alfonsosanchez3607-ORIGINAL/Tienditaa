@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    table{
+        width: 70%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    td{
+        padding: 20px;
+    }
+
+    h1{
+        color: #2c3e50;
+    }
+
+    h3{
+        color: #34495e;
+    }
+
+    input[type="range"]{
+        width: 250px;
+        cursor: pointer;
+    }
+
+    #num{
+        font-size: 20px;
+        font-weight: bold;
+        color: #2980b9;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover{
+        background-color: #2980b9;
+    }
+
+    #tablita{
+        margin-top: 15px;
+        font-size: 18px;
+        color: #2c3e50;
+        line-height: 1.8;
+    }
+
+    #res{
+        font-weight: bold;
+        color: #e74c3c;
+    }
+</style>
+
+</head>
+<body>
+    <center>
+    <table width="100%" border="1">
+  
+<tr>
+<td>
+    <h1>TABLAS DE MULTIPLICAR</h1>
+    <h3>NÚMERO</h3>
+    <input type="range" id="numero" min="1" max="100" value="1" oninput="tablas()">
+    <span id="num">1</span><br>
+    <button onclick="reset()">RESET</button>
+    </td>
+</tr>
+<tr>
+<td>
+    <h3>TABLA DE MULTIPLICAR</h3>
+    <div id="res"></div>
+    <div id="tablita">0</div>
+</td>
+</tr>
+</table>
+</center>
+    <script src="js/examen(1).js"></script>
+
+</body>
+</html>

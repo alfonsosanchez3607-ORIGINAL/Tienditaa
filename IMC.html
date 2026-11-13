@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>IMC</h1>
+<table width="100%" border="1">
+<tr>
+<td>
+    <h3>PESO</h3>
+    <input type="range" id="peso" min="1" max="100" value="1" oninput="calcular()"><span id="numPeso">1 KG</span><br>
+    <h3>ALTURA</h3>
+    <input type="range" id="altura" min="1" max="200" value="1" oninput="calcular()"><span id="numAltura">1 CM</span><br>
+    <button onclick="reset()">RESET</button>
+</td>
+</tr>
+
+<tr>
+<td>
+    <h3>RESULTADO</h3>
+    <div id="IMC"></div>
+<div class="rectangulos">
+    <div class="color azul">BAJO PESO</div>
+    <div class="color verde">NORMAL </div>
+    <div class="color amarillo">SOBREPESO</div>
+    <div class="color naranja">OBESIDAD I</div>
+    <div class="color rojo">OBESIDAD II </div>
+    <div class="color oscuro">OBESIDAD III </div>
+</div>
+</td>
+</tr>
+</table>
+<script src="js/IMC.js"></script>
+</body>
+</html>
